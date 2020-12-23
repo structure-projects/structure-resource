@@ -1,0 +1,2 @@
+# structure-resource
+资源组件主要应用于微服务架构中，介于Oauth2认证后的token来访问资源服务可以使用改组件对资源进行鉴权
