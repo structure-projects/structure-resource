@@ -1,0 +1,14 @@
+server:
+  port: 8085
+structure:
+  security:
+    antMatchers:
+      unAuthenticated:
+      # 不经过身份验证的接口
+      - /login
+      - /doc.html
+      - /webjars/**
+      - /swagger-resources/**
+      - /v2/api-docs/**
+    client-id: web
+    jwt: true #开启JWT默认为非对称解密方式 如果不用非对称加密解密可自行重构TokenStore
